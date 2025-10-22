@@ -1,2 +1,5 @@
 def fizzBuzz (n:int)-> int:
-          return str(n)
+    if n == 3:
+        return "Fizz"
+
+    return str(n)
