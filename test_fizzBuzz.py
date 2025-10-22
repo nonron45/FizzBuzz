@@ -1,7 +1,7 @@
+from  fizzBuzz import fizzBuzz
 import pytest
-def fizzBuzz (n:int)-> int:
-    if n==0:
-          return 1
-def test_fizzBuzz0return1 ():
-    result = fizzBuzz(0)
-    assert  result ==1
+@pytest.mark.parametrize("n, expected_result",[(0,0),(1,1)])
+
+def test_fizzBuzz0return1 (n, expected_result):
+    result:int  = fizzBuzz(n)
+    assert  result == expected_result
