@@ -1,6 +1,6 @@
 from  fizzBuzz import fizzBuzz
 import pytest
-@pytest.mark.parametrize("n, expected_result",[(0,'0'),(1,'1'),(2,'2'),(3,"Fizz")])
+@pytest.mark.parametrize("n, expected_result",[(0,'0'),(1,'1'),(2,'2'),(3,"Fizz"),(4,'4')])
 
 def test_fizzBuzz0return1 (n:int, expected_result: str):
     result:int  = fizzBuzz(n)
